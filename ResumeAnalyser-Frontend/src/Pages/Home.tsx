@@ -1,10 +1,10 @@
 function home() {
   return (
-    <div className="w-full h-screen">
-      <div className="h-screen lg:w-[80%] md:w-[95%] mx-auto font-sans">
+    <div className="h-full bg-[#10002B]">
+      <div className="h-full lg:w-[80%] md:w-[95%] mx-auto font-sans">
         <div
           id="navigation"
-          className="w-full mt-4 flex flex-row justify-between h-20"
+          className="w-full mt-0 flex flex-row justify-between h-20"
         >
           <div className="flex flex-row items-center">
             <img
@@ -14,7 +14,7 @@ function home() {
               alt="resume"
             />
 
-            <div className="font-sans text-2xl font-medium text-white">
+            <div className="font-sans text-xl font-extrabold text-white mt-2">
               ResumeAnalyser
             </div>
           </div>
@@ -48,8 +48,8 @@ function home() {
             <input type="file" accept="" className="bg-transparent  h-[100%] w-[100%] left-0 top-0 opacity-0 absolute overflow-clip hover:cursor-pointer cursor"/>
             <button type="submit" className="bg-transparent border border-white rounded-md px-6 py-2 hover:bg-white hover:text-[#10002B] transition-colors duration-300 mt-3">Upload your Resume</button>
             <p className="font-medium text-xs mt-7">or you can just drop you resume here</p>
+            
           </div>
-          
         </div>
       </div>
     </div>

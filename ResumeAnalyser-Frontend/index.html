@@ -5,10 +5,29 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React + TS</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom scrollbar styles */
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #4a5568;
+      
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #2d3748;
+      border-radius: 8px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: #10002B;
+    }
+  </style>
+
   </head>
-  <body style="background-color:#10002B">
-    <div id="root"></div>
+  <body>
+    <div id="root" class="custom-scrollbar h-screen overflow-x-hidden overflow-y-hidden"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
