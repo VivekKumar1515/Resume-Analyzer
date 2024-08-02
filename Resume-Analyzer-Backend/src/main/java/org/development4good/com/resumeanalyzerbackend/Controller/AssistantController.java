@@ -1,6 +1,6 @@
 package org.development4good.com.resumeanalyzerbackend.Controller;
 
-import org.development4good.com.resumeanalyzerbackend.AiAssistant;
+import org.development4good.com.resumeanalyzerbackend.Service.AiAssistant;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -18,9 +18,6 @@ public class AssistantController {
 
     @RequestMapping(value = "/assistant", method = RequestMethod.GET)
     public String assistant(@RequestParam(value = "country", defaultValue = "Scotland") String country) {
-        AiAssistant.Country capital = assistant.chat(UUID.randomUUID().toString(), "What is the capital of " + country + "?");
-        return capital.toString();
-
-
+        return assistant.chat(UUID.randomUUID().toString(), "give feedback about Vivek's resume");
     }
 }
